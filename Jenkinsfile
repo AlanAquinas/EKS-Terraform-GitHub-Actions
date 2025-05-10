@@ -22,7 +22,7 @@ pipeline {
                 withCredentials([string(credentialsId: 'AlanAquinas-access-token', variable: 'GITHUB_TOKEN')]) {
                     git(
                         url:    "https://${GITHUB_TOKEN}@github.com/AlanAquinas/EKS-Terraform-GitHub-Actions.git",
-                        branch: 'master'
+                        branch: 'main'
                     )
                 }
             }
